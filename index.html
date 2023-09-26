@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iqbal Prasetya - Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="dist/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="dist/css/minify.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6">iqbalprasettya.</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-600 lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base font-semibold text-dark py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-primary dark:text-white">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base font-semibold text-dark py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-primary dark:text-white">About</a>
+                </li>
+                <li class="group">
+                  <a href="#portfolio" class="text-base font-semibold text-dark py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-primary dark:text-white">Portfolio</a>
+                </li>
+                <li class="group">
+                  <a href="#skills" class="text-base font-semibold text-dark py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-primary dark:text-white">Skills</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base font-semibold text-dark py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-primary dark:text-white">Contact</a>
+                </li>
+                <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">⛅</span>
+                    <input type="checkbox" name="" id="dark-toggle" class="hidden" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">🌙</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-36 dark:bg-dark overflow-hidden">
+      <div class="absolute right-10 top-24 w-8 h-8 max-w-lg -rotate-45 rounded-md bg-transparent border-2 border-yellow-700 opacity-80"></div>
+      <div class="absolute -right-20 bottom-48 w-40 h-8 max-w-lg -rotate-45 rounded-xl bg-transparent border-2 border-yellow-700 opacity-80"></div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl mb-2" data-aos="fade-up">Halo Semua ✌, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Iqbal Prasetya</span></h1>
+            <h2 class="font-medium text-secondary text-lg mb-3 lg:text-2xl dark:text-zinc-400" data-aos="fade-up" data-aos-delay="100">Web Developer</h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed dark:text-zinc-400" data-aos="fade-up" data-aos-delay="150">
+              Belajar web programming itu mudah dan menyenangkan bukan? <span class="text-dark font-semibold dark:text-white">Bukan!</span>
+            </p>
+            <a
+              href="mailto:iqbalprasetya665@gmail.com"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >Hubungi Saya</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 relative lg:nt-9 lg:right-0">
+              <img src="dist/img/iqbal.png" alt="Iqbal Prasetya" class="relative z-10 max-w-full mx-auto " />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-150 md:bottom-14">
+                <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#a16207"
+                    d="M40.6,-12C47.9,9.3,45.9,34.8,28.1,50.5C10.4,66.1,-23.1,72,-39.9,58.8C-56.7,45.7,-56.8,13.6,-47.4,-10.6C-37.9,-34.8,-19,-51,-1.2,-50.6C16.6,-50.3,33.3,-33.2,40.6,-12Z"
+                    transform="translate(100 100) scale(1.2)"
+                  />
+                </svg> -->
+                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-aos="fade-up" data-aos-delay="400">
+                  <path
+                    fill="#a16207"
+                    d="M43.4,-78.7C54.3,-68.9,59.8,-53.3,58.9,-39.2C58.1,-25.1,51,-12.6,49.2,-1C47.5,10.5,51.1,21.1,49.9,31.5C48.6,42,42.4,52.4,33.3,62.9C24.2,73.5,12.1,84.2,2.4,80C-7.3,75.9,-14.6,56.9,-28.2,48.9C-41.8,41,-61.8,44.1,-67.4,37.8C-73,31.4,-64.4,15.7,-61.9,1.4C-59.4,-12.9,-63.2,-25.7,-59.1,-34.8C-55,-43.8,-43.1,-48.9,-32,-58.6C-20.8,-68.2,-10.4,-82.4,2.9,-87.5C16.3,-92.5,32.5,-88.5,43.4,-78.7Z"
+                    transform="translate(100 110) scale(0.8)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section -->
+    <section id="about" class="relative pt-36 pb-32 dark:bg-zinc-800 overflow-hidden">
+      <div class="hidden absolute inset-x-0 h-80 max-w-lg bg-gradient-to-tr from-indigo-500 via-yellow-700 to-[#C084FC] blur-[118px] dark:block"></div>
+      <div class="relative container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg">Tentang Saya</h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Yuk, belajar web programming!</h2>
+            <p class="font-medium text-base text-secondary mb-6 max-w-xl lg:text-lg dark:text-zinc-400">
+              Halo semuanya, Nama saya Iqbal Prasetya tapi kalian bisa memanggil saya Iqbal. Saya seorang Web Developer lulusan SMK yang sangat bersemangat untuk meningkatkan keterampilan pengkodean saya dan mengembangkan situs web.
+            </p>
+            <a href="mailto:muhamadiqbalprasetya89@gmail.com" class="text-base font-semibold text-white bg-primary py-2 px-4 rounded-md shadow-lg hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out">Download CV</a>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4 z-50 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
+            <p class="font-medium text-base text-secondary mb-6 dark:text-zinc-400">
+              Jangan lewatkan momen-momen berharga! Mari kita terhubung di sosial media, berbagi cerita, inspirasi, dan menjalin persahabatan virtual yang tak terbatas. Bersama, kita ciptakan dunia daring yang penuh dengan koneksi dan
+              kebahagiaan.
+            </p>
+            <div class="flex items-center">
+              <a
+                href="https://www.linkedin.com/in/iqbalprasettya/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="http://github.com/iqbalprasettya"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/iqbalprasettya/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -right-20 bottom-[40%] w-40 h-40 max-w-lg -rotate-45 rounded-xl bg-yellow-700 blur-[90px] dark:hidden"></div>
+      <!-- <div class="absolute bottom-11 right-0 h-80 max-w-lg bg-gradient-to-tr from-indigo-400 via-yellow-700 to-[#C084FC] blur-[118px]"></div> -->
+    </section>
+    <!-- About Section End-->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="relative pt-36 pb-16 bg-slate-100 dark:bg-dark dark:bg-hero-pattern dark:bg-repeat">
+      <div class="hidden absolute inset-x-0 m-auto h-80 max-w-lg bg-gradient-to-tr from-indigo-400 via-teal-900 to-[#C084FC] blur-[118px] dark:block"></div>
+
+      <div class="relative container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-bold text-lg text-primary mb-2 uppercase">Portfolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Project Terbaru Saya</h2>
+            <p class="font-medium text-md text-secondary md:text-lg dark:text-zinc-400">
+              Belakangan ini, saya telah menjalankan berbagai macam proyek terbaru. Mulai dari belajar framework javascript, mencoba memakai API, hingga yang baru baru ini saya ketagihan mencoba AI image generated.
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+          <div class="mb-12 px-4 md:w-1/2">
+            <div class="overflow-hidden rounded-xl bg-white shadow-lg dark:bg-zinc-800">
+              <img src="dist/img/portfolio/weddingcuy.png" alt="WeddingCuy" width="w-full" />
+              <div class="py-5 px-4">
+                <h3 class="font-semibold text-xl text-dark mt-3 mb-3 dark:text-white">WeddingCuy - Wedding Organizer Website</h3>
+                <p class="font-medium text-base text-secondary mb-3">Website ini saya buat pada saat uji kompetensi keahlian di sekolah menengah kejuruan, dibuat dengan framework bootstrap, html, css, javacript, dan php native</p>
+                <a href="https://weddingcuy.000webhostapp.com/" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">View</a>
+                <a href="https://github.com/iqbalprasettya/weddingcuy" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 px-4 md:w-1/2">
+            <div class="overflow-hidden rounded-xl bg-white shadow-lg dark:bg-zinc-800">
+              <img src="dist/img/portfolio/prastcloud.png" alt="PrastCloud" width="w-full" />
+              <div class="py-5 px-4">
+                <h3 class="font-semibold text-xl text-dark mt-3 mb-3 dark:text-white">PrastCloud - Company Profile Website</h3>
+                <p class="font-medium text-base text-secondary mb-3">Website tentang company profile perusahaan cloud storage yang saya buat menggunakan php native berserta tampilan admin panel untuk mengubah data.</p>
+                <a href="http://prastcloud.infinityfreeapp.com/" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">View</a>
+                <a href="https://github.com/iqbalprasettya/prastcloud" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 px-4 md:w-1/2">
+            <div class="overflow-hidden rounded-xl bg-white shadow-lg dark:bg-zinc-800">
+              <img src="dist/img/portfolio/cdc-unpak.png" alt="cdc-unpak" width="w-full" />
+              <div class="py-5 px-4">
+                <h3 class="font-semibold text-xl text-dark mt-3 mb-3 dark:text-white">Career Development Center Website</h3>
+                <p class="font-medium text-base text-secondary mb-3">
+                  Project dibuat oleh Saya dan Teman-teman yang melaksanakan PKL di Universitas Pakuan Bogor pada Fakultas FMIPA untuk mempermudah mahasiswa mahasiswa untuk mencari pekerjaan.
+                </p>
+                <a href="#" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">View</a>
+                <a href="https://github.com/iqbalprasettya/career-development-center" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="pt-36 pb-32 bg-dark dark:bg-slate-300">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-bold text-lg text-primary mb-2 uppercase">Skills</h4>
+            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Kemampuan Yang Saya Miliki</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Kemampuan yang saya miliki mencakup keahlian dalam pemrograman, kemampuan berkerjasama tim yang baik, dan Saya juga bersemangat untuk terus belajar dan berkembang.</p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/html.png" alt="HTML" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/css.png" alt="CSS" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/js.png" alt="JS" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/php.png" alt="PHP" />
+            </div>
+            <div class="mx-4 max-w-[50px] text-5xl xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8 text-white dark:text-dark">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/bootstrap.png" alt="bootstrap" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/tailwind.png" alt="tailwind" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/laravel.png" alt="Laravel" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/react.png" alt="react" />
+            </div>
+            <div class="mx-4 max-w-[50px] xl:max-w-[80px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skills/adobe-photoshop-logo.png" alt="photoshop" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-bold text-lg text-primary mb-2 uppercase">Blog</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur blanditiis illo esse incidunt.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Tips Belajar Programming</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat officia beatae quisquam?</p>
+                <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Review Keyboard GMMK Pro</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi facilis illum in.</p>
+                <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+              <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Menikmati Secangkir Kopi</a>
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, totam ipsum ea quam sequi velit sunt.</p>
+                <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Blog Section End -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-zinc-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-bold text-lg text-primary mb-2 uppercase">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Saya</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Jika Anda memiliki pertanyaan, saran, atau ingin berkolaborasi, jangan ragu untuk menghubungi saya melalui email atau media sosial yang tersedia di profil saya. Saya senang mendengar dari Anda!
+            </p>
+          </div>
+        </div>
+        <form action="">
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-primary">Nama</label>
+              <input type="text" id="name" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold text-primary">Email</label>
+              <input type="email" id="email" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-primary">Pesan</label>
+              <textarea name="" id="" cols="30" rows="5" class="w-full bg-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button class="w-full text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">Iqbal Prasetya</h2>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="inline-block text-base hover:text-primary mb-2">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block text-base hover:text-primary mb-2">About</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block text-base hover:text-primary mb-2">Portfolio</a>
+              </li>
+              <li>
+                <a href="skills" class="inline-block text-base hover:text-primary mb-2">Skills</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-primary mb-2">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h3 class="font-bold text-2xl mb-2">Contact Info</h3>
+            <ul>
+              <li class="mb-2">
+                <span class="text-2xl mr-3 text-primary"><i class="fa-solid fa-envelope"></i></span>iqbalprasetya665@gmail.com
+              </li>
+              <li class="mb-2">
+                <span class="text-2xl mr-3 text-primary"><i class="fa-solid fa-phone"></i></span>+62 896-0878-0861
+              </li>
+              <li class="mb-2">
+                <span class="text-2xl mr-3 text-primary"><i class="fa-solid fa-map-location-dot"></i></span>Dramaga, Bogor, Jawabarat
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex items-center justify-center mb-5">
+            <a
+              href="https://www.linkedin.com/in/iqbalprasettya/"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="http://github.com/iqbalprasettya"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/iqbalprasettya/"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 dark:border-slate-300 dark:text-slate-300 transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <p class="font-medium text-xs text-slate-500 text-center">
+            Dibuat dengan ❤ oleh <a href="" target="_blank" class="font-bold text-primary">Iqbal Prasetya</a> menggunakan <a href="" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to top  -->
+    <a id="to-top" href="#home" class="hidden fixed bottom-4 right-4 z-[9999] items-center justify-center bg-primary rounded-full p-4 hover:animate-pulse">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="dist/js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
+        once: false,
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
