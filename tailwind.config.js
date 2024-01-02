@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["index.html", "node_modules/preline/dist/*.js"],
   darkMode: "class",
   theme: {
     container: {
@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('../dist/img/pattern.png')"
+        "hero-pattern": "url('../dist/img/pattern.png')",
       },
       colors: {
         primary: "#a16207",
@@ -21,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('preline/plugin')],
 };
