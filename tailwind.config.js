@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "node_modules/preline/dist/*.js"],
+  content: ["index.html"],
   darkMode: "class",
   theme: {
     container: {
@@ -21,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('preline/plugin')],
+  plugins: [require("daisyui")],
 };
